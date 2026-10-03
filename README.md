@@ -13,14 +13,24 @@ Mã tra cứu thời tiết đã hoàn chỉnh. Bài có năm vị trí `TODO` t
 
 ## 1. Cài môi trường
 
+- Vào repo https://github.com/datpq-alpha/Bai9 và fork về tài khoản cá nhân
+- Vào trang GitHub cá nhân và coppy link repo của mình, ví dụ: https://github.com/<tk của em>/Bai9.git
+- Mở CMD gõ lần lượt các lệnh:
+```
+cd Desktop
+git clone https://github.com/<tk của em>/Bai9.git Bai9
+```
+- Sau đó, repo Bai9 trên trang cá nhân đã được đồng bộ url về repo Bai9 trên máy.
+
 Mở Terminal tại thư mục `Bai9`.
 
-Windows PowerShell:
+Windows PowerShell (chạy từng lệnh một):
 
 ```powershell
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
+Nếu PowerShell chặn script, chạy một lần Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser .
 ```
 
 macOS/Linux:
